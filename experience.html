@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience</title>
 
     <style>
-
-        * 
-        {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -74,6 +70,44 @@
         nav ul li a:hover::after 
         {
             transform: scaleX(1);
+        }
+
+        .hero 
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(176, 176, 176);
+            color: rgb(9, 0, 0);
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .hero-container 
+        {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .hero-icon 
+        {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .hero-text h1 
+        {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text p 
+        {
+            font-size: 1.2rem;
         }
 
         .container 
@@ -173,6 +207,12 @@
             transform: scale(1.2);
         }
 
+        /* Spacing under the "Below is a list of my experiences:" text */
+        .spacing 
+        {
+            margin-bottom: 20px;
+        }
+
     </style>
 
 </head>
@@ -180,23 +220,27 @@
 <body>
 
     <header>
-
         <nav>
-
             <ul>
                 <li><a href="index.html">About Me</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="experience.html">Experience</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-
         </nav>
-
     </header>
 
-    <div class="container">
+    <section class="hero">
+        <div class="hero-container">
+            <img src="personal-Icon copy.png" alt="Icon" class="hero-icon">
+            <div class="hero-text">
+                <h1>Experience</h1>
+                <p>Learn about my passion for cars and my roleplay server experiences.</p>
+            </div>
+        </div>
+    </section>
 
-        <h1>My Discord Experience</h1>
+    <div class="container">
 
         <div class="section">
             <h2>My Passion for Cars & Greenville</h2>
@@ -212,9 +256,9 @@
         <div class="section">
             <h2>Roleplay Server Experience</h2>
             <p>
-                Over time, I have joined several roleplay servers in Greenville, taking on different roles and responsibilities such as directing the servers, managing the staff members, and much more! Its practically a full time job considering that my positions were high ranking ones. I also own a server, which I have worked really hard to make and obtain 500+ members!
-                Below is a list of my experiences:
+                Over time, I have joined several roleplay servers in Greenville, taking on different roles and responsibilities such as directing the servers, managing the staff members, and much more! It's practically a full-time job considering that my positions were high-ranking ones. I also own a server, which I have worked really hard to make and obtain 500+ members!
             </p>
+            <p class="spacing"><strong>Below is a list of my experiences:</strong></p>
 
             <ul class="server-list">
                 <li><strong>Server Name:</strong> Joje's Greenville Roleplay <br> <strong>Members:</strong> 10000+ <br> <strong>Rank:</strong> Staff Coordinator </li>
@@ -230,20 +274,16 @@
     </div>
 
     <section class="bottom-nav">
-
         <div class="bottom-buttons">
             <a href="portfolio.html" class="bottom-btn">View Portfolio</a>
             <a href="contact.html" class="bottom-btn">Contact Me</a>
         </div>
-
     </section>
 
     <footer>
-
         <div class="icon-container">
             <img src="personal-Icon copy.png" alt="Personal Icon">
         </div>
-
     </footer>
 
 </body>
