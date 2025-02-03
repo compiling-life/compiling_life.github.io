@@ -8,9 +8,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>About Me</title>
+<title>Pages</title>
 
 <style>
+
 * 
 {
 margin: 0;
@@ -24,6 +25,7 @@ font-family: 'Arial', sans-serif;
 background-color: #f4f4f4;
 color: #333;
 line-height: 1.6;
+min-height: 100vh;
 }
 
 header 
@@ -114,16 +116,16 @@ margin-bottom: 1rem;
 font-size: 1.2rem;
 }
 
-.about-section 
+.pages-section 
 {
-padding: 2rem;
+padding: 3rem 2rem;
 background-color: #fff;
 margin-top: 3rem;
 border-radius: 10px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.about-section h2 
+.pages-section h2 
 {
 font-size: 2.5rem;
 text-align: center;
@@ -131,80 +133,66 @@ color: rgb(73, 115, 139);
 margin-bottom: 2rem;
 }
 
-.about-content 
+.pages-content 
 {
 display: grid;
-grid-template-columns: repeat(2, 1fr);
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 gap: 2rem;
 justify-items: center;
+margin-top: 2rem;
 }
 
-.about-item 
+.page-item 
 {
 background-color: #f9f9f9;
 padding: 1.5rem;
 border-radius: 8px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 width: 100%;
-min-height: 250px;
+min-height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+text-align: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about-item h3 
+.page-item:hover 
 {
-font-size: 1.6rem;
+transform: scale(1.05);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.page-item h3 
+{
+font-size: 1.8rem;
 color: rgb(250, 153, 7);
 margin-bottom: 1rem;
 }
 
-.about-item p 
+.page-item p 
 {
-font-size: 1rem;
+font-size: 1.1rem;
 color: #555;
+margin-bottom: 1rem;
 }
 
-.about-item ul 
+.page-item a 
 {
-list-style-type: disc;
-margin-left: 1rem;
-font-size: 1rem;
-}
-
-.about-item.skills 
-{
-grid-column: span 1;
-}
-
-.bottom-nav 
-{
-background-color: #e0e0e0;
-padding: 3rem 0;
-text-align: center;
-}
-
-.bottom-buttons 
-{
-display: flex;
-justify-content: center;
-gap: 2rem;
-}
-
-.bottom-btn 
-{
-background-color: silver;
-color: #333;
-padding: 1rem 2rem;
+display: inline-block;
+margin-top: 1rem;
+background-color: rgb(250, 153, 7);
+color: white;
+padding: 1rem;
 text-decoration: none;
-font-size: 1.2rem;
-font-weight: bold;
 border-radius: 5px;
-transition: background-color 0.3s ease, transform 0.3s ease;
+font-weight: bold;
+transition: background-color 0.3s ease;
 }
 
-.bottom-btn:hover 
+.page-item a:hover 
 {
 background-color: rgb(73, 115, 139);
-color: white;
-transform: scale(1.05);
 }
 
 footer 
@@ -229,18 +217,8 @@ transition: transform 0.3s ease;
 transform: scale(1.2);
 }
 
-@keyframes fadeIn 
-{
-from 
-{
-opacity: 0;
-}
-to 
-{
-opacity: 1;
-}
-}
 </style>
+
 </head>
 
 <body>
@@ -275,75 +253,61 @@ opacity: 1;
 
 <div class="profile-text">
 
-<h1>Hello, I am compiling_life</h1>
+<h1>Pages</h1>
 
-<p> I'm a Computer science enthusiast aspiring to excel as a software engineer, exploring the programming world! </p>
+<p>Explore the websites I've built! You can find the links and descriptions here.</p>
 
-</div>
-
-</div>
-
-</section>
-
-<section class="about-section">
-
-<h2>About Me</h2>
-
-<div class="about-content">
-
-<div class="about-item">
-
-<h3>Background</h3>
-
-<p>I am currently a high school student at Forest Park High School, where I have developed a passion for software engineering and web development. I enjoy learning new languages like Java and exploring different frameworks to expand my knowledge.</p>
-
-</div>
-
-<div class="about-item">
-
-<h3>Interests</h3>
-
-<p>In my free time, I love creating java projects & experimenting with design tools like Photoshop. I also enjoy working on personal coding projects and contributing to open-source communities.</p>
-
-</div>
-
-<div class="about-item skills">
-
-<h3>Skills</h3>
-
-<ul>
-
-<li>Java</li>
-
-<li>HTML/CSS/JavaScript</li>
-
-<li>Photoshop</li>
-
-<li>Web Design & Development</li>
-
-</ul>
-
-</div>
-
-<div class="about-item">
-
-<h3>Hiring</h3>
-    
-<p>Interested in hiring me as a Java developer or a web designer? Feel free to head to the contact page: <a href="contact.html"> Contact Page Link </a></p>
-    
 </div>
 
 </div>
 
 </section>
 
-<section class="bottom-nav">
+<section class="pages-section">
 
-<div class="bottom-buttons">
+<h2>Websites</h2>
 
-<a href="portfolio.html" class="bottom-btn">View Portfolio</a>
+<div class="pages-content">
 
-<a href="contact.html" class="bottom-btn">Contact Me</a>
+<div class="page-item">
+
+<h3>Chatroom</h3>
+
+<p>This is a chatroom I made. It contains both, a public and a private chat system!</p>
+
+<a href="https://compiling-life-chatroom.onrender.com/">Click here 🔗</a>
+
+</div>
+
+<div class="page-item">
+
+<h3>Website 2 Title</h3>
+
+<p>Website 2 Description</p>
+
+<a href="#">Click here 🔗</a>
+
+</div>
+
+<div class="page-item">
+
+<h3>Website 3 Title</h3>
+
+<p>Website 3 Description</p>
+
+<a href="#">Click here 🔗</a>
+
+</div>
+
+<div class="page-item">
+
+<h3>Website 4 Title</h3>
+    
+<p>Website 4 Description</p>
+    
+<a href="#">Click here 🔗</a>
+    
+</div>
 
 </div>
 
