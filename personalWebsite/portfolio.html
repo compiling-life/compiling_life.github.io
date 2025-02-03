@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfolio</title>
+
+<style>
+
+*
+
+{
+
+margin: 0;
+
+padding: 0;
+
+box-sizing: border-box;
+
+}
+
+html, body
+
+{
+
+height: 100%;
+
+}
+
+body
+
+{
+
+font-family: 'Arial', sans-serif;
+
+background-color: #f4f4f4;
+
+color: #333;
+
+line-height: 1.6;
+
+display: flex;
+
+flex-direction: column;
+
+min-height: 100%;
+
+}
+
+header
+
+{
+
+background-color: rgb(73, 115, 139);
+
+padding: 1rem;
+
+}
+
+nav ul
+
+{
+
+display: flex;
+
+justify-content: center;
+
+list-style: none;
+
+}
+
+nav ul li
+
+{
+
+margin: 0 1.5rem;
+
+}
+
+nav ul li a
+
+{
+
+color: white;
+
+text-decoration: none;
+
+font-size: 1.2rem;
+
+text-transform: uppercase;
+
+position: relative;
+
+transition: color 0.3s ease;
+
+}
+
+nav ul li a:hover
+
+{
+
+color: rgb(250, 153, 7);
+
+}
+
+nav ul li a::after
+
+{
+
+content: '';
+
+position: absolute;
+
+bottom: -5px;
+
+left: 0;
+
+width: 100%;
+
+height: 2px;
+
+background-color: rgb(250, 153, 7);
+
+transform: scaleX(0);
+
+transition: transform 0.3s ease;
+
+}
+
+nav ul li a:hover::after
+
+{
+
+transform: scaleX(1);
+
+}
+
+.hero
+
+{
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+background-color: rgb(176, 176, 176);
+
+color: rgb(9, 0, 0);
+
+padding: 3rem 2rem;
+
+border-radius: 10px;
+
+margin-bottom: 2rem;
+
+}
+
+.hero-container
+
+{
+
+display: flex;
+
+align-items: center;
+
+gap: 2rem;
+
+}
+
+.hero-icon
+
+{
+
+width: 150px;
+
+height: 150px;
+
+border-radius: 50%;
+
+border: 3px solid white;
+
+}
+
+.hero-text h1
+
+{
+
+font-size: 2.5rem;
+
+margin-bottom: 1rem;
+
+}
+
+.hero-text p
+
+{
+
+font-size: 1.2rem;
+
+}
+
+.portfolio-section
+
+{
+
+display: flex;
+
+justify-content: center;
+
+gap: 2rem;
+
+padding: 3rem 1rem;
+
+}
+
+.portfolio-option
+
+{
+
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+
+background: linear-gradient(145deg, rgb(250, 153, 7), rgb(255, 180, 85));
+
+border-radius: 12px;
+
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+padding: 2rem;
+
+width: 250px;
+
+text-align: center;
+
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.portfolio-option:hover
+
+{
+
+transform: translateY(-5px);
+
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.portfolio-option h2
+
+{
+
+font-size: 1.5rem;
+
+color: #fff;
+
+margin-bottom: 1rem;
+
+text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+}
+
+.portfolio-option a
+
+{
+
+text-decoration: none;
+
+background-color: white;
+
+color: rgb(250, 153, 7);
+
+padding: 0.75rem 1.5rem;
+
+border-radius: 5px;
+
+font-size: 1rem;
+
+font-weight: bold;
+
+transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
+}
+
+.portfolio-option a:hover
+
+{
+
+background-color: rgb(73, 115, 139);
+
+color: white;
+
+transform: scale(1.05);
+
+}
+
+footer
+
+{
+
+text-align: center;
+
+padding: 2rem 0;
+
+background-color: rgb(44, 48, 51);
+
+margin-top: auto;
+
+}
+
+.icon-container img
+
+{
+
+width: 60px;
+
+height: 60px;
+
+border-radius: 50%;
+
+border: 2px solid white;
+
+transition: transform 0.3s ease;
+
+}
+
+.icon-container img:hover
+
+{
+
+transform: scale(1.2);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">About Me</a></li>
+
+<li><a href="portfolio.html">Portfolio</a></li>
+
+<li><a href="experience.html">Experience</a></li>
+
+<li><a href="pages.html">Pages</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-container">
+
+<img src="personal-Icon copy.png" alt="Icon" class="hero-icon">
+
+<div class="hero-text">
+
+<h1>Portfolio</h1>
+
+<p>Explore my Java downloads or Photoshop projects below!</p>
+
+<p>Additional content, including games, will be available soon!</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="portfolio-section">
+
+<div class="portfolio-option">
+
+<h2>Java<br>Projects</h2>
+
+<a href="java.html">View Projects</a>
+
+</div>
+
+<div class="portfolio-option">
+
+<h2>Photoshop Projects</h2>
+
+<a href="photoshop.html">View Projects</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="icon-container">
+
+<img src="personal-Icon copy.png" alt="Your Icon">
+
+</div>
+
+</footer>
+
+</body>
+
+</html>
